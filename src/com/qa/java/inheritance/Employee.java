@@ -14,6 +14,7 @@ public Employee(String name, int age, String gender, double annualsalary) {
 }
 public double calculateWeeklySalary(double annualsalary ) {
 	return  annualsalary / 52;
+	
 }
 	public double calculateMonthlySalary(double annualsalary ) {
 		return  annualsalary / 12;

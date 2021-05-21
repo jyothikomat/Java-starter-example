@@ -8,12 +8,31 @@ private String type;
 private String make;
 private String model;
 private int wheels;
-public Vehicle(int id, String type, String make, String model, int wheels) {
+private int price;
+public Vehicle(int id, String type, String make, String model, int wheels, int price) {
 	super();
 	this.id = id;
 	this.type = type;
 	this.make = make;
 	this.model = model;
+    this.wheels = wheels;
+    this.price = price;
+
+	
+}
+
+
+public int getPrice() {
+	return price;
+}
+
+
+public void setPrice(int price) {
+	this.price = price;
+}
+
+
+public void setWheels(int wheels) {
 	this.wheels = wheels;
 }
 
@@ -49,6 +68,10 @@ public int getWheels() {
 
 public String toString() {
 	return type + " ID: " + id;
+}
+
+public double repairbill() {
+	return 5.0;
 }
 
 

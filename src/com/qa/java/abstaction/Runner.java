@@ -12,9 +12,12 @@ public class Runner {
 		g.addVehicle(car2);
 		g.addVehicle(mc1);
 		g.addVehicle(t1);
+		System.out.println(g.showTotalRepairBills());
 		//g.removeVehicle(567);
-		System.out.println(g.toString());
-
+//		System.out.println(g.toString());
+        //g.showGarage();
+	//	g.clearGarage();
+//		System.out.println(g.toString());
 	}
 }
 		

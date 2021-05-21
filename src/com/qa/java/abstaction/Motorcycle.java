@@ -9,7 +9,7 @@ public class Motorcycle extends Vehicle {
 	
 
 	public Motorcycle(int id, String make, String model, boolean hasHelmet) {
-		super(id, "motorcycle", make, model, 2);
+		super(id, "motorcycle", make, model, 2,10000);
 		this.hasHelmet = hasHelmet;
 	}
 
@@ -29,7 +29,9 @@ public class Motorcycle extends Vehicle {
 		return super.toString() + " Has Helmet: " + hasHelmet;
 	}
 
-	
+	public double repairbill() {
+		return super.getPrice()/2;
+	}
 	
 	
 
